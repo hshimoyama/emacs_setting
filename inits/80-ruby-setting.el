@@ -4,6 +4,7 @@
 	     (setq indent-tabs-mode nil)
 	     (setq ruby-indent-level tab-width)
 	     (setq ruby-deep-indent-paren-style nil)
+	     (custom-set-variables '(ruby-insert-encoding-magic-comment nil))
 	     (defadvice ruby-indent-line (after unindent-closing-paren activate)
 	       (let ((column (current-column))
 		     indent offset)
